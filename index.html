@@ -1,0 +1,100 @@
+<html>
+  <body>
+    contenu de ma page
+    <p id="target">Mon text exemple de départ.</p>
+
+    <script type="text/javascript">
+      // J'ai ciblé mon élément par son id="target"
+      const targetNode = document.getElementById("target");
+
+      targetNode.addEventListener("click", () => {
+        targetNode.innerText = "Tu m'a cliqué.";
+        targetNode.style.color = "red";
+      });
+
+      targetNode.addEventListener("blur", () => {
+        targetNode.innerText = "Tu me survole";
+        targetNode.style.color = "blue";
+      });
+
+      //
+
+      // Mon js
+
+      //   let string = "ma phrase"; // noir string
+      //   console.log("ma 1er var", string);
+
+      //   let number = 1; // vert integer
+      //   console.log("number : ", number);
+
+      //   number += 1;
+      //   console.log("number :", number);
+
+      //   let maVariable = "toto";
+
+      //   maVariable = "tata";
+
+      //   console.log("maVariable :", maVariable);
+
+      //   const tableau = ["Peter", "Paul"];
+      //   console.log(tableau);
+      //   console.log(tableau[3]);
+
+      //   tableau.push("Pierre");
+
+      //   console.log(tableau);
+
+      //   const personne = {
+      //     nom: "Cavelier",
+      //     prenom: "Mickael",
+      //     age: 33,
+      //     voitures: ["opel", "audi"],
+      //   };
+
+      //   personne.langue = "Francais";
+
+      //   0 -> 10 ; +1
+
+      //   for (let index = 1; index <= 10; index++) {
+      //     // je suis dans mon for
+      //     console.log("index", index);
+      //   }
+
+      //   const utilisateurs = [
+      //     {
+      //       prenom: "Gian",
+      //       age: 12,
+      //     },
+      //     {
+      //       prenom: "Mickael",
+      //       age: 33,
+      //     },
+      //     {
+      //       prenom: "Mael",
+      //       age: 5,
+      //     },
+      //   ];
+      //   console.log({ utilisateurs });
+
+      //   utilisateurs.forEach((utilisateur) => {
+      //     console.log(
+      //       "Je m'appelle " +
+      //         utilisateur.prenom +
+      //         " et j'ai " +
+      //         utilisateur.age +
+      //         " ans."
+      //     );
+      //   });
+
+      let age = 1;
+
+      if (age === 100) {
+        console.log("j'ai 100 ans");
+      } else if (age === undefined) {
+        console.log(" la variable age n'est pas initialisé");
+      } else {
+        console.log("elle est initialisé mais ne vaut pas 100.");
+      }
+    </script>
+  </body>
+</html>
